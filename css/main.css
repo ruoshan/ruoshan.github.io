@@ -68,6 +68,11 @@ ul.posts span {
   line-height: 1.5em;
 }
 
+.site .header {
+    border-bottom: 4px solid #EEE;
+    margin-bottom: 0.5em;
+}
+
 .site .header a {
   font-weight: bold;
   text-decoration: none;
@@ -76,7 +81,7 @@ ul.posts span {
 .site .header h1.title {
   font-size: 2em;
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
 }
 
 .site .header h1.title a {
@@ -90,6 +95,7 @@ ul.posts span {
 .site .header a.extra {
   color: #aaa;
   margin-left: 1em;
+  float: right;
 }
 
 .site .header a.extra:hover {
