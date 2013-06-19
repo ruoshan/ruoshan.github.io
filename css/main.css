@@ -25,8 +25,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
+a         { color: #000; }
+a:hover   { color: #00a; }
 a:visited { color: #a0a; }
 
 table {
@@ -69,7 +69,7 @@ ul.posts span {
 }
 
 .site .header {
-    border-bottom: 4px solid #EEE;
+    border-bottom: 2px solid #EEE;
     margin-bottom: 0.5em;
 }
 
@@ -81,20 +81,22 @@ ul.posts span {
 .site .header h1.title {
   font-size: 2em;
   display: inline-block;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3em;
+  margin-left: -1px; /* seems better left-align */
 }
 
 .site .header h1.title a {
-  color: #a00;
+  color: #0066DD;
 }
 
 .site .header h1.title a:hover {
-  color: #000;
+  color: #0022AA;
 }
 
 .site .header a.extra {
   color: #aaa;
   margin-left: 1em;
+  margin-top: 0.6em;
   float: right;
 }
 
@@ -109,18 +111,24 @@ ul.posts span {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
+  border-top: 4px solid #ddd;
   margin-top: 2em;
   overflow: hidden;
 }
 
+.site .footer .note {
+    float: right;
+    overflow: hidden;
+}
+
 .site .footer .contact {
-  float: left;
-  margin-right: 3em;
+  float: right;
+  overflow: hidden;
 }
 
 .site .footer .contact a {
   color: #8085C1;
+  text-decoration: none;
 }
 
 .site .footer .rss {
@@ -169,4 +177,12 @@ ul.posts span {
 
 #post pre.terminal code {
   background-color: #333;
+}
+
+/*********************************************************************
+ *                               utils                               *
+ *********************************************************************/
+
+.clearfix {
+    clear:both;
 }
