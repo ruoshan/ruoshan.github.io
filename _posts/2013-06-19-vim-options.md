@@ -16,7 +16,7 @@ date: 2013-06-19 15:16
       第二个为想C这类语言补全常用函数库，可以设置为`set path+="/usr/include"`.
       设置后可以补全像printf(linux C 的各种接口)等的函数了。
 
-    - 还有一个是不需要配置目录的(当然rtpao有对)，那就是omni complete，使用
+    - 还有一个是不需要配置目录的(当然rtp还是要配的)，那就是omni complete，使用
       ctrl-x ctrl-o调用。这个补全必须打开`filetype on`和`filetype plugin on`.
 
 2. `set scrolloff=5`这个设置是让光标移到倒数第5行的时候就开始滚动，浏览会比较舒服。
