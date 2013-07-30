@@ -11,6 +11,7 @@ markdown获得的`<p>`的内容是把换行直接换为空格了，英文没问�
 如链接的文章所说，这个在github page中不能用，因为gh不启用plugin。先对markdown做处理再提交就OK了。
 具体的做法如下：
 
+    {% highlight ruby %}
     #!/usr/bin/env ruby
     # encoding: UTF-8
     # preprocessing the text for markdown writen in Chinese
@@ -28,3 +29,4 @@ markdown获得的`<p>`的内容是把换行直接换为空格了，英文没问�
             file.write(lines)
         end
     end
+    {% endhighlight %}
