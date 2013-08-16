@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A handy script for auto update markdown file to html.
+title: A handy script for auto generating markdown file to html.
 author: Ruoshan Huang
 date: 2013-08-16 10:37
 ---
