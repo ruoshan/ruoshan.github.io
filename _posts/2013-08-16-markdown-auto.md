@@ -9,21 +9,23 @@ to auto generate markdown to html everytime I update the markdown file,
 and preview in Firefox. I wrote this scipt as followed,
 
 {% highlight sh %}
+
 #!/bin/bash
 # a handy script to regenerate the markdown file once modified.
 # please install the inotify-tools.
 # USAGE:
-#   cd to_your_directory
-#   bash imarkdown.sh
+#   $ cd to_your_directory
+#   $ bash imarkdown.sh *.markdown
 #
 # by Ruoshan Huang
 
-while true
-do
-    f=`inotifywait -q -e modify --format "%w" *.markdown`
+inotifywait -qm -e close_write --format "%w" *.markdown |while read f; do
+    if [ -z "$f" ]; then
+        exit 1
+    fi
     html=${f/%markdown/html}
     echo "markdown generated: ${html}"
-    markdown $f > $html
+    markdown "$f" > "$html"
 done
 {% endhighlight %}
 
@@ -33,3 +35,8 @@ done
 please install these softs first:
 - `sudo apt-get install inotify-tools markdown`
 - for Firefox, please install the [Auto Reload addon](https://addons.mozilla.org/en-US/firefox/addon/auto-reload/)
+
+<br/>
+
+## notice
+the script can only deal with suffix ".markdown", modify it to see you fit.
