@@ -24,4 +24,4 @@ date: 2013-06-19 15:16
 4. `matchit.vim`这个插件包含在vim的runtime中，却没有被使用，它是对`%`命令的加强，不只对`{}[]<>()`等这类的块结构进行来回跳转，还能对`if...end(if)`,`<div>...</div>`的这样的结构进行跳转，这对于Ruby,LaTex,xml这类语言来说非常方便。启用它只要把它从`/usr/share/vim/vim73/marcos/matchit.vim`
    中拷贝到你的`.vim/plugin/`中即可。
 
-5. 2013-08-19 更新：用vim写python，可能会发现vim在开启smartindent后，每次它都会把python的注释直接缩进到最左。这个的解决方法是`inoremap # X^H#` 请注意这个"^H"符号是`ctrl-v h`得到的(也可以是`inoremap # X<BS>#`)。
+5. 2013-08-19 更新：用vim写python，可能会发现vim在开启smartindent后，每次它都会把python的注释直接缩进到最左。这个的解决方法是`inoremap # X^H#` 请注意这个"^H"符号是`ctrl-v ctrl-h`得到的(也可以是`inoremap # X<BS>#`)。
