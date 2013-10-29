@@ -164,7 +164,7 @@ ul.posts span {
 
 /* standard */
 #post pre {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
 }
@@ -192,6 +192,11 @@ ul.posts span {
 
 #post pre.terminal code {
     background-color: #333;
+}
+
+#post div.highlight {
+    background-color: #EEEEFF;
+    overflow: auto;
 }
 
 /*********************************************************************

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About me
+title: About Me
 author: Ruoshan Huang
 date: 2013-06-06 13:57
 ---
