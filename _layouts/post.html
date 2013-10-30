@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
+<h2>{{ page.title }} <g:plusone size="small" recommendations="false"></g:plusone></h2>
+
+<script type="text/javascript">
+  (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+           po.src = 'https://apis.google.com/js/plusone.js';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                 })();
+</script>
+
 <p class="meta">{{ page.date | date_to_string }} by {{ page.author }}</p>
 
 <div id="post">
