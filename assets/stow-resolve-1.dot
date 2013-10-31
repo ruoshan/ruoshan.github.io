@@ -1,0 +1,13 @@
+digraph G{
+    "$HOME" -> Stow;
+    "$HOME" -> "link to vim-A/.vim";
+    Stow -> "vim-A";
+    Stow -> "vim-B";
+    "vim-A" -> A -> ".vimrc-1";
+    "vim-B" -> B -> ".vimrc-2";
+
+    "link to vim-A/.vim" [style=dashed];
+    Stow [style=filled, fillcolor="green"];
+    A [label=".vim"];
+    B [label=".vim"];
+}

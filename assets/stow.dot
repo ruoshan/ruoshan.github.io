@@ -1,0 +1,19 @@
+digraph G{
+    "$HOME" -> Stow;
+    "$HOME" -> "link to .vimrc";
+    "$HOME" -> "link to .vim"
+    Stow -> vim;
+    Stow -> zsh;
+    Stow -> emacs;
+    Stow -> ".git";
+    zsh -> ".zshrc";
+    zsh -> ".oh-my-zsh";
+    emacs -> ".emacs";
+    emacs -> ".emacs.d";
+    vim -> ".vimrc";
+    vim -> ".vim";
+
+    Stow [fillcolor=green, style="filled"];
+    "link to .vimrc" [style=dashed];
+    "link to .vim" [style=dashed];
+}

@@ -34,7 +34,7 @@ done
 ## requirement
 please install these softs first:
 - `sudo apt-get install inotify-tools markdown`
-- for Firefox, please install the [Auto Reload addon](https://addons.mozilla.org/en-US/firefox/addon/auto-reload/)
+- for Firefox, please install the <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/auto-reload/">Auto Reload Addon</a>
 
 <br/>
 

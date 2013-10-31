@@ -1,0 +1,15 @@
+digraph G{
+    "$HOME" -> Stow;
+    "$HOME" -> ".vim become a directory!";
+    ".vim become a directory!" -> "link to .vimrc-1";
+    ".vim become a directory!" -> "link to .vimrc-2";
+    Stow -> "vim-A";
+    Stow -> "vim-B";
+    "vim-A" -> A -> ".vimrc-1";
+    "vim-B" -> B -> ".vimrc-2";
+
+    ".vim become a directory!" [style=filled, fillcolor="blue"];
+    Stow [style=filled, fillcolor="green"];
+    A [label=".vim"];
+    B [label=".vim"];
+}
