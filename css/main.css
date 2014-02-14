@@ -88,8 +88,7 @@ ul.posts span {
 .site .header h1.title {
     font-size: 2em;
     display: inline-block;
-    margin-bottom: 0.3em;
-    margin-left: -1px; /* seems better left-align */
+    margin-bottom: 0;
 }
 
 .site .header h1.title a {
@@ -115,8 +114,18 @@ ul.posts span {
     padding: 0 0 5em;
 }
 
+.site .content h1 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
 .site .meta {
     color: #aaa;
+}
+
+.site .content .meta {
+    font-size: 0.8em;
 }
 
 .site .footer {
