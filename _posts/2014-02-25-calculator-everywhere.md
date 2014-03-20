@@ -5,7 +5,7 @@ author: Ruoshan Huang
 date: 2014-02-25 14:22
 ---
 
-here are some handy ways to do my math:
+Here are some handy ways to do my math:
 
 - in a Terminal, I could `alias ca='printf "%d\n"'`, then just type `ca 3*12-32` to
   get myself the result, but remember not to have spaces.
