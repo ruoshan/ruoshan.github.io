@@ -9,7 +9,6 @@ to auto generate markdown to html everytime I update the markdown file,
 and preview in Firefox. I wrote this scipt as followed,
 
 {% highlight sh %}
-
 #!/bin/bash
 # a handy script to regenerate the markdown file once modified.
 # please install the inotify-tools.

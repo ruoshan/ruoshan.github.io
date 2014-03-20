@@ -15,7 +15,7 @@ html, body { height: 100%; }
 body {
     background-color: #DDD;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -174,8 +174,6 @@ ul.posts span {
 
 /* standard */
 #post pre {
-    border: 0px solid #ddd;
-    background-color: #eef;
     padding: 0 .4em;
 }
 
@@ -190,6 +188,7 @@ ul.posts span {
 }
 
 #post pre code {
+    display: block;
     border: none;
 }
 
@@ -205,7 +204,7 @@ ul.posts span {
 }
 
 #post div.highlight {
-    background-color: #EEEEFF;
+    background-color: #eef;
     overflow: auto;
 }
 
