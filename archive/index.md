@@ -1,21 +1,12 @@
-<!--
 ---
 layout: default
-title: Ruoshan's jiffies
+title: Archive
 ---
--->
 
-<script>
-    <!-- Bye Jekyll :) -->
-    window.location.href = "https://gist.github.com/ruoshan"
-</script>
-
-<!--
 <div id="home">
     <ul class="posts">
-        {% for post in site.categories.lately %}
+        {% for post in site.categories.archive %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
 </div>
--->
